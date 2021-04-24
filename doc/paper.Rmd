@@ -3,7 +3,7 @@ title: |
   | A Template for Reproducible Empirical Research^[I acknowledge financial support from Deutsche Forschungsgemeinschaft-Project-ID 403041268 - TRR 266.] \vspace{1cm}
 
 author: |
-  | Joachim Gassen 
+  | Rebecca Koprik - extending Joachim Gassen 
   | TRR 266 "Accounting for Transparency"
   | Humboldt-Universität zu Berlin 
 
@@ -181,10 +181,68 @@ latex_tab <- c(
 cat(paste(latex_tab, collapse = "\n"))
 ```
 
+# Motivation
+
+How does income per capita affects life expectancy?
+
+# Data by income level
+
+```{r MyContrib, results="asis"}
+
+
+kable(
+  tab_expand, digits = c(0, 3, 3, 3, 3, 3, 3, 3), format = "latex",
+  caption = "\\label{tab:descriptives}Life Expectancy by Income Group",
+  format.args = list(decimal.mark = ".", big.mark = ",", 
+                     scientific=FALSE),
+  booktabs = TRUE, escape = FALSE, linesep = ""
+) -> kab_latex
+
+lat_tab <- unlist(strsplit(kab_latex, "\n"))
+lat_tab[6] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
+lat_tab[8] <- "\\hline\\\\[-1.8ex]"
+lat_tab[length(lat_tab) - 2] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
+
+latex_tab <- c(
+  "\\begin{table}[!htbp]",
+  "\\centering",
+  lat_tab[3],
+  "\\begin{adjustbox}{width=\\textwidth}",
+  "\\begin{threeparttable}",
+  lat_tab[5:(length(lat_tab) - 1)],
+  "\\begin{tablenotes}[flushleft]",
+  "\\setlength{\\labelsep}{0pt}",
+  "\\footnotetext",
+  sprintf(
+    "\\item Note: The data is obtained from the World Bank. It presents the average life expectancy by World Bank Income group.", length(unique(smp$country)),
+    min(as.numeric(as.character(smp$year))), 
+    max(as.numeric(as.character(smp$year)))
+  ),
+  "\\end{tablenotes}",
+  "\\end{threeparttable}",
+  "\\end{adjustbox}",
+  "\\end{table}"
+)
+cat(paste(latex_tab, collapse = "\n"))  
+```
+
+# Life expectancy over time
+```{r MyContrib2, echo = FALSE, fig.align="center", fig.cap="\\label{fig:scatter}Life expectancy in years - average for all countries"}
+fig_scatter_avg
+```
+
+```{r MyContrib3, echo = FALSE, fig.align="center", fig.cap="\\label{fig:scatter}Life expectancy in years - average by income level"}
+fig_scatter_level
+```
+
+By comparing both figures, we can see that the average life expectancy changes drastically by the World Bank Income Group over the years.
+
 \pagebreak
 
 \setcounter{table}{0}
 \renewcommand{\thetable}{\arabic{table}}
+
+
 
 # References {-}
 \setlength{\parindent}{-0.2in}

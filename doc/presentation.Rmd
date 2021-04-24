@@ -1,6 +1,6 @@
 ---
 title: "The Preston Curve Revisited"
-author: "Joachim Gassen"
+author: "Rebecca Koprik - extending Joachim Gassen"
 institute: "TRR 266 Accounting for Transparency"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: 
@@ -27,7 +27,9 @@ load("../data/generated/sample.rda")
 ```
 
 
-# Motivation
+### Motivation
+
+How does income per capita affects life expectancy?
 
 ### The Preston Curve
 
@@ -84,7 +86,6 @@ cat(paste(latex_tab, collapse = "\n"))
 ```{r Scatter}
 fig_scatter
 ```
-
 
 ### No presentation without correlation table...
 
@@ -145,9 +146,51 @@ cat(paste(latex_tab, collapse = "\n"))
 - Have fun adjusting this template to fit your research needs
 - Consider contributing to its repository and promote Open Science!
 
+### Data by income level
 
+```{r MyContrib, results="asis"}
+kable(
+  tab_expand, digits = c(0, 3, 3, 3, 3, 3, 3, 3), format = "latex",
+  caption = "\\label{tab:descriptives}Life expectancy by income level",
+  format.args = list(decimal.mark = ".", big.mark = ",", 
+                     scientific=FALSE),
+  booktabs = TRUE, escape = FALSE, linesep = ""
+) -> kab_latex
 
+lat_tab <- unlist(strsplit(kab_latex, "\n"))
+lat_tab[6] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
+lat_tab[8] <- "\\hline\\\\[-1.8ex]"
+lat_tab[length(lat_tab) - 2] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
 
+latex_tab <- c(
+  "\\begin{table}[!htbp]",  
+  "\\resizebox{\\textwidth}{!}{",
+  "\\begin{threeparttable}",
+  lat_tab[5:(length(lat_tab) - 2)],
+  "\\end{tabular}",
+  "\\begin{tablenotes}[flushleft]",
+  "\\setlength{\\labelsep}{0pt}",
+  sprintf(
+    "\\item Note: The data is obtained from the World Bank. It presents the average life expectancy by World Bank Income group."),
+ "\\end{tablenotes}",
+  "\\end{threeparttable}",
+  "}",
+  "\\end{table}"
+)
+cat(paste(latex_tab, collapse = "\n"))
+```
 
+### Life expectancy over time
+
+```{r MyContrib2, echo = FALSE, fig.align="center", fig.cap="\\label{fig:scatter}Life expectancy in years - average for all countries", out.width = "60%"}
+fig_scatter_avg
+```
+### Life expectancy over time
+
+```{r MyContrib3, echo = FALSE, fig.align="center", fig.cap="\\label{fig:scatter}Life expectancy in years - average by income level", out.width = "60%"}
+fig_scatter_level
+```
+
+By comparing both figures, we can see that the average life expectancy changes drastically by the World Bank Income Group over the years.
 
 
