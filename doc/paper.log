@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.22)  24 APR 2021 17:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.14)  16 MAY 2021 18:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **paper.tex
 (./paper.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> (c:/Users/Otavio/AppData/Roaming/TinyTeX/texm
+L3 programming layer <2021-05-07> (c:/Users/Otavio/AppData/Roaming/TinyTeX/texm
 f-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
 (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size11.clo
@@ -564,54 +564,134 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count297
 \@thisrulewidth=\dimen198
 )
+(c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/animate/animate.s
+ty
+Package: animate 2020/10/07 PDF & SVG animations from files and inline graphics
+
+(c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/oberdiek/ifdraft.
+sty
+Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
+) (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count298
+\calc@Bcount=\count299
+\calc@Adimen=\dimen199
+\calc@Bdimen=\dimen256
+\calc@Askip=\skip55
+\calc@Bskip=\skip56
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count300
+\calc@Cskip=\skip57
+)
+(c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zref/zref-abspage
+.sty
+Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
+
+(c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/zref/zref-base.st
+y
+Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
+Package zref Info: New property list: main on input line 764.
+Package zref Info: New property: default on input line 765.
+Package zref Info: New property: page on input line 766.
+)
+\c@abspage=\count301
+Package zref Info: New property: abspage on input line 66.
+)
+(c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/media9/pdfbase.st
+y
+(c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys
+2e/l3keys2e.sty
+(c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.st
+y
+Package: expl3 2021-05-07 L3 programming layer (loader) 
+
+(c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backe
+nd-pdftex.def
+File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count302
+\l__pdf_internal_box=\box54
+))
+Package: l3keys2e 2021-05-07 LaTeX2e option processing using LaTeX3 keys
+)
+Package: pdfbase 2021/03/01 v0.46 driver independent access to low-level PDF fe
+atures
+\g_pbs_page_int=\count303
+\g_pbs_oc_int=\count304
+)
+(c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ocgx2/ocgbase.sty
+Package: ocgbase 2021/01/25 v0.18 support package for ocgx2.sty
+\g_ocgbase_nd_int=\count305
+)
+\@anim@box=\box55
+\@anim@measbox=\box56
+\@anim@tmpdima=\dimen257
+\@anim@tmpdimb=\dimen258
+\@anim@num=\count306
+\@anim@curframe=\count307
+\@anim@curframe@zb=\count308
+\@anim@resizeflags=\count309
+\@anim@skipfram=\count310
+\@anim@mulframecnt=\count311
+\@anim@@tmlnfile=\read2
+\@anim@tmpcnt=\count312
+\c@@anim@ltxcnt=\count313
+\@anim@curlayer=\count314
+\@anim@lineno=\count315
+\@anim@curfield=\count316
+\@anim@@resizeflags=\count317
+)
 (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.s
 ty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip55
-\LTright=\skip56
-\LTpre=\skip57
-\LTpost=\skip58
-\LTchunksize=\count298
-\LTcapwidth=\dimen199
-\LT@head=\box54
-\LT@firsthead=\box55
-\LT@foot=\box56
-\LT@lastfoot=\box57
-\LT@cols=\count299
-\LT@rows=\count300
-\c@LT@tables=\count301
-\c@LT@chunks=\count302
+\LTleft=\skip58
+\LTright=\skip59
+\LTpre=\skip60
+\LTpost=\skip61
+\LTchunksize=\count318
+\LTcapwidth=\dimen259
+\LT@head=\box57
+\LT@firsthead=\box58
+\LT@foot=\box59
+\LT@lastfoot=\box60
+\LT@cols=\count319
+\LT@rows=\count320
+\c@LT@tables=\count321
+\c@LT@chunks=\count322
 \LT@p@ftn=\toks30
 )
 (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow
 .sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip59
-\multirow@cntb=\count303
-\multirow@dima=\skip60
-\bigstrutjot=\dimen256
+\multirow@colwidth=\skip62
+\multirow@cntb=\count323
+\multirow@dima=\skip63
+\bigstrutjot=\dimen260
 )
 (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.s
 ty
-\wrapoverhang=\dimen257
-\WF@size=\dimen258
-\c@WF@wrappedlines=\count304
-\WF@box=\box58
+\wrapoverhang=\dimen261
+\WF@size=\dimen262
+\c@WF@wrappedlines=\count324
+\WF@box=\box61
 \WF@everypar=\toks31
 Package: wrapfig 2003/01/31  v 3.6
 ) (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count305
+\c@float@type=\count325
 \float@exts=\toks32
-\float@box=\box59
+\float@box=\box62
 \@float@everytoks=\toks33
-\@floatcapt=\box60
+\@floatcapt=\box63
 )
 (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl
 .sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks34
-\minrowclearance=\skip61
+\minrowclearance=\skip64
 )
 (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflsca
 pe.sty
@@ -624,28 +704,28 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ) (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tabu/tabu.sty
 Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
-\c@taburow=\count306
-\tabu@nbcols=\count307
-\tabu@cnt=\count308
-\tabu@Xcol=\count309
-\tabu@alloc=\count310
-\tabu@nested=\count311
-\tabu@target=\dimen259
-\tabu@spreadtarget=\dimen260
-\tabu@naturalX=\dimen261
-\tabucolX=\dimen262
-\tabu@Xsum=\dimen263
-\extrarowdepth=\dimen264
-\abovetabulinesep=\dimen265
-\belowtabulinesep=\dimen266
-\tabustrutrule=\dimen267
+\c@taburow=\count326
+\tabu@nbcols=\count327
+\tabu@cnt=\count328
+\tabu@Xcol=\count329
+\tabu@alloc=\count330
+\tabu@nested=\count331
+\tabu@target=\dimen263
+\tabu@spreadtarget=\dimen264
+\tabu@naturalX=\dimen265
+\tabucolX=\dimen266
+\tabu@Xsum=\dimen267
+\extrarowdepth=\dimen268
+\abovetabulinesep=\dimen269
+\belowtabulinesep=\dimen270
+\tabustrutrule=\dimen271
 \tabu@thebody=\toks35
 \tabu@footnotes=\toks36
-\tabu@box=\box61
-\tabu@arstrutbox=\box62
-\tabu@hleads=\box63
-\tabu@vleads=\box64
-\tabu@cellskip=\skip62
+\tabu@box=\box64
+\tabu@arstrutbox=\box65
+\tabu@hleads=\box66
+\tabu@vleads=\box67
+\tabu@cellskip=\skip65
 )
 (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/t
 hreeparttablex.sty
@@ -659,65 +739,49 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 aces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\TPTL@width=\skip63
+\TPTL@width=\skip66
 ) (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box65
-\UL@hyphenbox=\box66
-\UL@skip=\skip64
+\UL@box=\box68
+\UL@hyphenbox=\box69
+\UL@skip=\skip67
 \UL@hook=\toks37
-\UL@height=\dimen268
-\UL@pe=\count312
-\UL@pixel=\dimen269
-\ULC@box=\box67
+\UL@height=\dimen272
+\UL@pe=\count332
+\UL@pixel=\dimen273
+\ULC@box=\box70
 Package: ulem 2019/11/18
-\ULdepth=\dimen270
+\ULdepth=\dimen274
 )
 (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell
 .sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen271
-\c@nlinenum=\count313
+\rotheadsize=\dimen275
+\c@nlinenum=\count333
 \TeXr@lab=\toks38
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
-
-(c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backe
-nd-pdftex.def
-File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count314
-\l__pdf_internal_box=\box68
-) (./paper.aux
-
-LaTeX Warning: Label `fig:scatter' multiply defined.
-
-
-LaTeX Warning: Label `fig:scatter' multiply defined.
-
-
-LaTeX Warning: Label `tab:descriptives' multiply defined.
-
-)
+(./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
 
 (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epst
 opdf-base.sty
@@ -730,7 +794,7 @@ pdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 96.
+Package hyperref Info: Link coloring OFF on input line 97.
 
 (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.
 sty
@@ -744,11 +808,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count315
+\c@section@level=\count334
 )
-LaTeX Info: Redefining \ref on input line 96.
-LaTeX Info: Redefining \pageref on input line 96.
-LaTeX Info: Redefining \nameref on input line 96.
+LaTeX Info: Redefining \ref on input line 97.
+LaTeX Info: Redefining \pageref on input line 97.
+LaTeX Info: Redefining \nameref on input line 97.
 (./paper.out) (./paper.out)
 \@outlinefile=\write5
 \openout5 = `paper.out'.
@@ -799,145 +863,262 @@ Package caption Info: threeparttable package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 9
-8.
+9.
 (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 9
-8.
+9.
 (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-98.
+99.
 (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-98.
+99.
 (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 98.
+(Font)              <12> on input line 99.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 98.
+(Font)              <8> on input line 99.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 98.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 98.
+(Font)              <6> on input line 99.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 99.
 
 (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 98.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 99.
 
 (c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 9
-8.
-(c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 98.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 98.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 98.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 98.
-[1
+) [1
 
 {c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdft
 ex.map}]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 124.
-\openout3 = `paper.fff'.
+(Font)              <10.95> on input line 137.
+[2]
+<../media/fig0.png, id=48, 370.38374pt x 261.22594pt>
+File: ../media/fig0.png Graphic file (type png)
+<use ../media/fig0.png>
+Package pdftex.def Info: ../media/fig0.png  used on input line 156.
+(pdftex.def)             Requested size: 370.38847pt x 261.22926pt.
+ <../media/fig0.png> <a0,fr0>
+<../media/fig1.png, id=58, 368.87813pt x 259.7203pt>
+File: ../media/fig1.png Graphic file (type png)
+<use ../media/fig1.png>
+Package pdftex.def Info: ../media/fig1.png  used on input line 156.
+(pdftex.def)             Requested size: 368.87721pt x 259.71967pt.
+ <../media/fig1.png> <a0,fr1>
+<../media/fig2.png, id=67, 378.66469pt x 255.20343pt>
+File: ../media/fig2.png Graphic file (type png)
+<use ../media/fig2.png>
+Package pdftex.def Info: ../media/fig2.png  used on input line 156.
+(pdftex.def)             Requested size: 378.66953pt x 255.2067pt.
+ <../media/fig2.png> <a0,fr2>
+<../media/fig3.png, id=76, 372.64218pt x 257.46187pt>
+File: ../media/fig3.png Graphic file (type png)
+<use ../media/fig3.png>
+Package pdftex.def Info: ../media/fig3.png  used on input line 156.
+(pdftex.def)             Requested size: 372.65263pt x 257.46907pt.
+ <../media/fig3.png> <a0,fr3>
+<../media/fig4.png, id=85, 379.4175pt x 258.9675pt>
+File: ../media/fig4.png Graphic file (type png)
+<use ../media/fig4.png>
+Package pdftex.def Info: ../media/fig4.png  used on input line 156.
+(pdftex.def)             Requested size: 379.42235pt x 258.97078pt.
+ <../media/fig4.png> <a0,fr4>
+<../media/fig5.png, id=94, 383.93437pt x 252.945pt>
+File: ../media/fig5.png Graphic file (type png)
+<use ../media/fig5.png>
+Package pdftex.def Info: ../media/fig5.png  used on input line 156.
+(pdftex.def)             Requested size: 383.93927pt x 252.94823pt.
+ <../media/fig5.png> <a0,fr5>
+<../media/fig6.png, id=103, 381.67593pt x 252.19218pt>
+File: ../media/fig6.png Graphic file (type png)
+<use ../media/fig6.png>
+Package pdftex.def Info: ../media/fig6.png  used on input line 156.
+(pdftex.def)             Requested size: 381.68082pt x 252.1954pt.
+ <../media/fig6.png> <a0,fr6>
+<../media/fig7.png, id=112, 371.13657pt x 259.7203pt>
+File: ../media/fig7.png Graphic file (type png)
+<use ../media/fig7.png>
+Package pdftex.def Info: ../media/fig7.png  used on input line 156.
+(pdftex.def)             Requested size: 371.13565pt x 259.71967pt.
+ <../media/fig7.png> <a0,fr7>
+<../media/fig8.png, id=121, 377.91188pt x 250.68657pt>
+File: ../media/fig8.png Graphic file (type png)
+<use ../media/fig8.png>
+Package pdftex.def Info: ../media/fig8.png  used on input line 156.
+(pdftex.def)             Requested size: 377.91095pt x 250.68594pt.
+ <../media/fig8.png> <a0,fr8>
+<../media/fig9.png, id=130, 368.1253pt x 251.43938pt>
+File: ../media/fig9.png Graphic file (type png)
+<use ../media/fig9.png>
+Package pdftex.def Info: ../media/fig9.png  used on input line 156.
+(pdftex.def)             Requested size: 368.1244pt x 251.43875pt.
+ <../media/fig9.png> <a0,fr9>
+<../media/fig10.png, id=139, 370.38374pt x 256.70906pt>
+File: ../media/fig10.png Graphic file (type png)
+<use ../media/fig10.png>
+Package pdftex.def Info: ../media/fig10.png  used on input line 156.
+(pdftex.def)             Requested size: 370.38847pt x 256.71233pt.
+ <../media/fig10.png> <a0,fr10>
 
-(paper.fff) [2]
-\openout4 = `paper.ttt'.
-
-(paper.ttt) [3] [4] AED endfloat: Processing end Figures and Tables [5] (./pape
-r.fff
-<../media/preston_1975_p235.png, id=86, 939.51pt x 584.1825pt>
-File: ../media/preston_1975_p235.png Graphic file (type png)
-<use ../media/preston_1975_p235.png>
-Package pdftex.def Info: ../media/preston_1975_p235.png  used on input line 3.
-(pdftex.def)             Requested size: 469.75385pt x 292.09053pt.
-[6 <../media/preston_1975_p235.png>]
-<paper_files/figure-latex/Scatter-1.pdf, id=93, 469.755pt x 325.215pt>
-File: paper_files/figure-latex/Scatter-1.pdf Graphic file (type pdf)
-<use paper_files/figure-latex/Scatter-1.pdf>
-Package pdftex.def Info: paper_files/figure-latex/Scatter-1.pdf  used on input 
-line 13.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[7 <./paper_files/figure-latex/Scatter-1.pdf>]
-<paper_files/figure-latex/MyContrib2-1.pdf, id=108, 469.755pt x 325.215pt>
-File: paper_files/figure-latex/MyContrib2-1.pdf Graphic file (type pdf)
-<use paper_files/figure-latex/MyContrib2-1.pdf>
-Package pdftex.def Info: paper_files/figure-latex/MyContrib2-1.pdf  used on inp
-ut line 23.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[8 <./paper_files/figure-latex/MyContrib2-1.pdf>]
-<paper_files/figure-latex/MyContrib3-1.pdf, id=119, 469.755pt x 325.215pt>
-File: paper_files/figure-latex/MyContrib3-1.pdf Graphic file (type pdf)
-<use paper_files/figure-latex/MyContrib3-1.pdf>
-Package pdftex.def Info: paper_files/figure-latex/MyContrib3-1.pdf  used on inp
-ut line 33.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-) [9 <./paper_files/figure-latex/MyContrib3-1.pdf>] (./paper.ttt [10
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 164.
 
 
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 171.
 
+[3] [4]
+<../media/fig11.png, id=188, 352.31625pt x 255.20343pt>
+File: ../media/fig11.png Graphic file (type png)
+<use ../media/fig11.png>
+Package pdftex.def Info: ../media/fig11.png  used on input line 215.
+(pdftex.def)             Requested size: 352.31538pt x 255.2028pt.
+ <../media/fig11.png> <a1,fr0>
+<../media/fig12.png, id=197, 347.04657pt x 255.20343pt>
+File: ../media/fig12.png Graphic file (type png)
+<use ../media/fig12.png>
+Package pdftex.def Info: ../media/fig12.png  used on input line 215.
+(pdftex.def)             Requested size: 347.0563pt x 255.21059pt.
+ <../media/fig12.png> <a1,fr1>
+<../media/fig13.png, id=207, 351.56343pt x 253.69781pt>
+File: ../media/fig13.png Graphic file (type png)
+<use ../media/fig13.png>
+Package pdftex.def Info: ../media/fig13.png  used on input line 215.
+(pdftex.def)             Requested size: 351.56256pt x 253.69719pt.
+ <../media/fig13.png> <a1,fr2>
+<../media/fig14.png, id=216, 353.06906pt x 252.945pt>
+File: ../media/fig14.png Graphic file (type png)
+<use ../media/fig14.png>
+Package pdftex.def Info: ../media/fig14.png  used on input line 215.
+(pdftex.def)             Requested size: 353.07358pt x 252.94823pt.
+ <../media/fig14.png> <a1,fr3>
+<../media/fig15.png, id=225, 350.05782pt x 252.19218pt>
+File: ../media/fig15.png Graphic file (type png)
+<use ../media/fig15.png>
+Package pdftex.def Info: ../media/fig15.png  used on input line 215.
+(pdftex.def)             Requested size: 350.06229pt x 252.1954pt.
+ <../media/fig15.png> <a1,fr4>
+<../media/fig16.png, id=234, 348.55219pt x 251.43938pt>
+File: ../media/fig16.png Graphic file (type png)
+<use ../media/fig16.png>
+Package pdftex.def Info: ../media/fig16.png  used on input line 215.
+(pdftex.def)             Requested size: 348.55132pt x 251.43875pt.
+ <../media/fig16.png> <a1,fr5>
+<../media/fig17.png, id=243, 351.56343pt x 252.19218pt>
+File: ../media/fig17.png Graphic file (type png)
+<use ../media/fig17.png>
+Package pdftex.def Info: ../media/fig17.png  used on input line 215.
+(pdftex.def)             Requested size: 351.56256pt x 252.19156pt.
+ <../media/fig17.png> <a1,fr6>
 
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 223.
 
+[5]
+<../media/tesla.png, id=275, 2509.375pt x 2509.375pt>
+File: ../media/tesla.png Graphic file (type png)
+<use ../media/tesla.png>
+Package pdftex.def Info: ../media/tesla.png  used on input line 243.
+(pdftex.def)             Requested size: 234.87042pt x 234.87042pt.
+<../media/tesla1.png, id=276, 936.49875pt x 426.09187pt>
+File: ../media/tesla1.png Graphic file (type png)
+<use ../media/tesla1.png>
+Package pdftex.def Info: ../media/tesla1.png  used on input line 251.
+(pdftex.def)             Requested size: 516.7621pt x 235.11844pt.
 
+Overfull \hbox (47.00708pt too wide) in paragraph at lines 251--251
+ [][] 
+ []
 
-] [11
+[6 <../media/tesla.png
 
-] [12
+pdfTeX warning: pdflatex.exe (file ../media/tesla.png): large interlaced PNG mi
+ght cause out of memory (use non-interlaced PNG to fix this)
+> <../media/tesla1.PNG>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+62.
+(c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [7]
+<../media/tesla_model_3.png, id=291, 811.53188pt x 478.78876pt>
+File: ../media/tesla_model_3.png Graphic file (type png)
+<use ../media/tesla_model_3.png>
+Package pdftex.def Info: ../media/tesla_model_3.png  used on input line 322.
+(pdftex.def)             Requested size: 516.74106pt x 304.86763pt.
 
-]) [13
+Overfull \hbox (46.98604pt too wide) in paragraph at lines 322--322
+ [][] 
+ []
 
-] (./paper.aux)
+[8 <../media/tesla_model_3.PNG>]
+<../media/tesla_model_y.png, id=298, 799.48688pt x 484.81125pt>
+File: ../media/tesla_model_y.png Graphic file (type png)
+<use ../media/tesla_model_y.png>
+Package pdftex.def Info: ../media/tesla_model_y.png  used on input line 336.
+(pdftex.def)             Requested size: 516.75691pt x 313.36295pt.
 
-LaTeX Warning: There were multiply-defined labels.
+Overfull \hbox (47.00189pt too wide) in paragraph at lines 336--336
+ [][] 
+ []
 
+[9 <../media/tesla_model_y.PNG>]
+<../media/tesla_future_demand.png, id=305, 572.1375pt x 563.85657pt>
+File: ../media/tesla_future_demand.png Graphic file (type png)
+<use ../media/tesla_future_demand.png>
+Package pdftex.def Info: ../media/tesla_future_demand.png  used on input line 3
+59.
+(pdftex.def)             Requested size: 469.75816pt x 462.95905pt.
+[10 <../media/tesla_future_demand.PNG>]
+<../media/spacex2.png, id=312, 444.2196pt x 217.2918pt>
+File: ../media/spacex2.png Graphic file (type png)
+<use ../media/spacex2.png>
+Package pdftex.def Info: ../media/spacex2.png  used on input line 384.
+(pdftex.def)             Requested size: 375.82611pt x 183.83682pt.
+[11 <../media/spacex2.PNG>] [12] AED endfloat: Processing end Figures and Table
+s [13]
+
+Package caption Warning: Unused \captionsetup[table] on input line 67.
+See the caption package documentation for explanation.
+
+(./paper.aux)
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: E9E75A3E3FD9AA18BCD888781D409B1C;938.
+(rerunfilecheck)             Checksum: 9E0431F4E14F27A291BFA9CAB2433C8D;836.
  ) 
 Here is how much of TeX's memory you used:
- 14988 strings out of 480954
- 230142 string characters out of 5905582
- 549203 words of memory out of 5000000
- 31861 multiletter control sequences out of 15000+600000
- 471140 words of font info for 83 fonts, out of 8000000 for 9000
+ 16448 strings out of 480806
+ 259541 string characters out of 5903338
+ 591948 words of memory out of 5000000
+ 33437 multiletter control sequences out of 15000+600000
+ 445723 words of font info for 59 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 71i,12n,74p,370b,716s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.
-enc}{c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-m
-athit.enc}{c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/l
-m/lm-mathsy.enc}{c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/d
-vips/lm/lm-ec.enc}{c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc
-/dvips/lm/lm-ts1.enc}<c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/fonts/
+ 83i,7n,91p,370b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.
+enc}{c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-t
+s1.enc}{c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/l
+m-mathsy.enc}{c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvip
+s/lm/lm-rm.enc}{c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dv
+ips/lm/lm-mathit.enc}<c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/fonts/
 type1/public/lm/lmbx10.pfb><c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/
 fonts/type1/public/lm/lmbx12.pfb><c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf
 -dist/fonts/type1/public/lm/lmmi10.pfb><c:/Users/Otavio/AppData/Roaming/TinyTeX
-/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/Otavio/AppData/Roaming/Ti
-nyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/Otavio/AppData/Roami
-ng/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/Otavio/AppData/
-Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/Otavio/AppD
-ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/Otavio/
-AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/Users/Ota
-vio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Use
-rs/Otavio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><
-c:/Users/Otavio/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.
-pfb>
-Output written on paper.pdf (13 pages, 630677 bytes).
+/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/Otavio/AppData/Roaming/Ti
+nyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/Otavio/AppData/Roami
+ng/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/Otavio/AppData/
+Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/Otavio/App
+Data/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/Otav
+io/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on paper.pdf (13 pages, 1260666 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
- 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 412 PDF objects out of 1000 (max. 8388607)
+ 267 compressed objects within 3 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 555 words of extra memory for PDF output out of 10000 (max. 10000000)
 

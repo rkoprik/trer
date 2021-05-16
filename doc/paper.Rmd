@@ -1,9 +1,10 @@
 ---
 title: |
-  | A Template for Reproducible Empirical Research^[I acknowledge financial support from Deutsche Forschungsgemeinschaft-Project-ID 403041268 - TRR 266.] \vspace{1cm}
+  | Assignment 2 - Build on theory: Unraveling theory \vspace{1cm}
 
 author: |
-  | Rebecca Koprik - extending Joachim Gassen 
+  | Rebecca Koprik
+  | Research on Corporate Transparency
   | TRR 266 "Accounting for Transparency"
   | Humboldt-Universität zu Berlin 
 
@@ -11,7 +12,7 @@ date: |
   | `r loc <- Sys.getlocale(category = "LC_TIME"); Sys.setlocale("LC_TIME", "C"); fdate <- format(Sys.time(), '%B %e, %Y'); Sys.setlocale("LC_TIME", loc); fdate` \vspace{1cm}
   
 abstract: |
-  | This is a paper stub generated out of a template repository. It repliactes the association of national income per capita with life expectancy that has become known as the 'Preston Curve'. 
+  | This is a handout for the lecture on Unravaling Theory. 
   | \vspace{8cm}
 
 bibliography: references.bib
@@ -40,6 +41,12 @@ header-includes:
   - \usepackage{adjustbox}
   - \usepackage{graphicx}
   - \usepackage{csquotes}
+  - \usepackage{booktabs} 
+  - \usepackage{animate}
+---
+
+---
+nocite: '@*'
 ---
 
 ```{r setup, message=FALSE, warning=FALSE, include=FALSE}
@@ -58,184 +65,155 @@ load("../output/results.rda")
 
 \pagebreak
 
-# Introduction
+# Intuition
+
+"Weather insiders (e.g., managers, sellers) fully disclose their private information has been a research interest in accounting as well as in finance and economics" (@JAR1988). The motivation in this is to understand what are the incentives and expected behaviour of the agents in this (un)certain information environment. 
+
+Do firms voluntarily disclose private information (e.g., about earnings, production, future demand, etc.)?
+
+  Firms indeed voluntarily disclose private information. They do so to try to avoid adverse selection. Adverse selection can refer to a situation where sellers have more information than buyers (or vice versa) about some aspect of product quality, or any other private information. Typically the more knowledgeable party is the seller. Adverse selection occurs when asymmetric information is exploited. For example, a firm that doesn't disclose results has better information about the company value than other market participants and might try to exploit this fact. However, investors are usually not willing to give money for something they are not fully informed about. By keeping the information private, the firm will end up with less capital invested - investors will discount for unsure information. Hence, firms do have an incentive to disclose and will voluntarily do so. 
   
-The scientific community widely agrees that reproduction, defined as reproducing findings using the same sample and method, and replication,  defined as retesting findings using a new sample while applying the same method, of empirical results are a central building block of  sound empirical evidence. Yet, although data and code repositories are on the rise, the additional materials only rarely lead to studies being directly reproducible. While several reasons for this observation have been discussed by prior literature, most commentators agree that the lack of established reproducible workflows makes reproductions and replications  inherently costly to do (@GGR2018). 
+# Model with certain information endowment
 
-On the GitHub repository of the TRR 266 "Accounting for Transparency", we host and maintain a repository (https://github.com/trer) that implements a bare-bones reproducible workflow. This paper stub is included in the repo and can be reproduced in its entirely by running the code included in the repository.
+  This model is based on @JLE1981 and @BJE1981. Let's assume a set of $i$ firms with a value $x$ represented by
+  \begin{equation}
+    x_i = y_i + \epsilon_i
+  \end{equation} 
+  where $x_i$ represents the firm value
+        $y_i$ represents the observable information
+        $\epsilon_i$ represents the error term
+        
+  Information is observed by each firm and has a probability density function of common knowledge and error is a generally unkown noise with $E[\epsilon]=0$. 
+  Investors have rational expectations and based on the information they receive, they will price the firm:
+  \begin{equation}
+  P(y) = E[x|y] = y
+  \end{equation}
+  
+  The only equilibrium in this game will be: firms disclose all the information, investors price the firm at $P = y$ upon disclosure and at $P = E[y]$ upon nondisclosure.
+  
+\begin{center}
+  Figure 1 \\
+  \animategraphics[loop,controls,width=0.8\textwidth,height=0.5\textwidth,scale=1.3,buttonsize=0.05\textwidth]{0.5}{../media/fig}{0}{10} \\
+  Source: Gassen (2021), based on Grossman (1981) and Milgrom (1981)
+\end{center}
+    
+  In Figure 1, we can see how the unraveling occurs. Initially, the 10 firms are uniformly distributed and no one discloses information. Upon nondisclosure (red dots), the market prices the firms based on the expectation of y - uniformly distributed from 1-10. Hence, $P = E[y] = (1+2+…+10)/10 = 5.5$. The firms that are after the 45' line (that have information that would place them above the price of 5.5) will have a strong incentive to disclose. They will annouce the disclosure (their representation turns blue) and then disclose. The market will adjust their price based on the information, since every information is trustworthy. As the first time, upon nondisclosure, the market will price the firms based on the expectation of y - now, uniformly distributed from 1-5. Hence, $P = E[y] = (1+2+…+5)/5 = 3$. The price of nondisclosing firms goes down from 5.5 to 3. The firms after the 45'line will again have a strong incentive to disclose, as they have the information that would place them with a higher price than 3. They update their disclosure decision and disclose information, being priced correctly at the same. The same initial readjustment of prices of nondisclosing firms will occur, they will be priced at the expectation of y - now, uniformly distributed from 1-2, $P = E[y] = (1+2)/2 = 1.5$. Price of nondisclosing firms goes down from 3 to 1.5. The firms that are undervalued at such price will disclose. The market will again adjust the price of the nondisclosing firms based on the expectation of y. This mechanism will occur until every firm discloses. The last firm would technically be indeferent on the disclosure, but the model assumes that upon indiference, firms disclose. Hence, we have the unique possible equilibrium - every firm voluntarily discloses information.
+  
+  
+# Model with uncertain information endowment 
 
+  The first model assumes that managers have a complete and perfect information on the company. However, it is quite strong to assume that every firm actually has the information to disclose. Is it even realistic to think that a manager wouldn’t have the information on the company?
+  There are several possibilities where information is not known. First one would be unpredictable cases (e.g., Covid-19). Such unpredictable events lead to an unexpected shock in future demand that affects all firms, with no possibility of forecast. 
+  A second possibility would be outside factors - substitute/complementary goods can be released at any time by another firm (affecting future demand, e.g.). 
+  Last but not least, different business models (BM) also lead to lack of information. Firms with traditional BM’s know their demand, can compare/estimate based on peers, etc. Innovative BM’s that work with new products don’t really know their future demand – they are trying something new and won’t disclose because than it wouldn’t be new anymore.
+  There are several other cases when information is not know, these are just some examples.
+  What happens when the manager doesn’t have the information? Would unraveling still occur?
+  
+  \newpage
 
-# The Preston Curve as a Case Study
-
-To demonstrate the workflow, I replicate a well-known association in global health and development economics: the positive association of national income per capita as assessed by country-level real Gross Domestic Product (GDP) per capita with country-average  life expectancy at birth. This association has become known as the "Preston Curve" (@P1975), as reproduced in Figure \ref{fig:preston_curve}. 
-
-```{r fig_preston_curve, out.height="15cm", fig.align = "center", fig.cap="\\label{fig:preston_curve}Preston Curve (Preston (1975): 235)"}
-include_graphics("../media/preston_1975_p235.png")
-```
-
-While it is unclear whether the association is indicative for a causal link of national income on life expectancy, it is often referred to in public debates as one of the main arguments why economic growth is socially desirable. The analysis presented here is only meant to  demonstrate the workflow of the repository and not to contribute to the underlying 
-question of causality. 
-
-The data for the analysis has been collected from the Open Data repository of the World Bank (https://data.worldbank.org). The sample is limited to country-year observations that have non-missing values for all variables and I use the natural logarithm of GDP per capita as my measure for national income per capita to account for the underlying growth process that shapes national income. The descriptive statistics of the data are presented in Table \ref{tab:descriptives}.
-
-Table \ref{tab:corr} reports the correlations between dependent and independent variables. As expected, it features a strong positive correlation between national income and life expectancy. Figure \ref{fig:scatter} visualizes this association.
-
-To verify that this association is robust to including controls and general cross-sectional as well as time variance, I estimate the respective coefficient for GDP per capita in a multiple  regression framework. Using a level-log multiple regression setup, Table \ref{tab:reg} yields a set of model estimates. As you can see, the association between national income and life expectancy is significant at conventional levels across all specifications. The magnitude of the association, however, is significantly reduced once one controls for unobserved cross-sectional variation by including country fixed effects.
-
-
-# Conclusion
-
-The Preston curve is alive and well. While being simplistic, the presented analysis contains all main building blocks of a typical empirical study based on observational data: data collection, sample specification, variable construction, exploratory as well as confirmatory analysis and result presentation. Have fun using this template for your own projects and consider contributing to its development, e.g., by providing code for Software packages besides R.
-
-```{r Scatter, echo = FALSE, fig.align="center", fig.cap="\\label{fig:scatter}National Income and Life Expectancy"}
-fig_scatter
-```
-
-```{r tab_descriptives_sample, results="asis"}
-desc_rnames <- paste0("\\textit{", smp_def$label[7:9], "}")
-t <- tab_desc_stat
-rownames(t$df) <- desc_rnames
-names(t$df)[c(5,7)] <- c("25 \\%", "75 \\%")
-kable(
-  t$df, digits = c(0, 3, 3, 3, 3, 3, 3, 3), format = "latex",
-  caption = "\\label{tab:descriptives}Descriptive Statistics",
-  format.args = list(decimal.mark = ".", big.mark = ",", 
-                     scientific=FALSE),
-  booktabs = TRUE, escape = FALSE, linesep = ""
-) -> kab_latex
-
-lat_tab <- unlist(strsplit(kab_latex, "\n"))
-lat_tab[6] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
-lat_tab[8] <- "\\hline\\\\[-1.8ex]"
-lat_tab[length(lat_tab) - 2] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
-
-latex_tab <- c(
-  "\\begin{table}[!htbp]",  
-  lat_tab[3],
-  "\\begin{adjustbox}{width=\\textwidth}",
-  "\\begin{threeparttable}",
-  lat_tab[5:(length(lat_tab) - 1)],
-  "\\begin{tablenotes}[flushleft]",
-  "\\setlength{\\labelsep}{0pt}",
-  "\\footnotetext",
-  sprintf(
-    "\\item Note: The data is obtained from the World Bank. The sample covers %d countries and the period %d to %d. \\textit{National Income per captia} values are in constant 2010 thousand U.S. dollars.", length(unique(smp$country)),
-    min(as.numeric(as.character(smp$year))), 
-    max(as.numeric(as.character(smp$year)))
-  ),
-  "\\end{tablenotes}",
-  "\\end{threeparttable}",
-  "\\end{adjustbox}",
-  "\\end{table}"
-)
-cat(paste(latex_tab, collapse = "\n"))  
-```
-
-``` {r CorrTable, results="asis"}
-tab <- tab_corr
-lat_tab <- unlist(strsplit(tab$kable_ret, "\n"))
-lat_tab[7:9] <- str_replace(
-  lat_tab[7:9], fixed(smp_def$var_name[8:10]), smp_def$label[8:10]
-)
-lat_tab[4] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
-lat_tab[6] <- "\\hline\\\\[-1.8ex]"
-lat_tab[10] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
-lat_tab[12] <- "\\begin{tablenotes}[flushleft] \\setlength{\\labelsep}{0pt} \\footnotetext"
-
-latex_tab <- c(
-  "\\begin{table}[!htbp]",  
-  "\\centering",
-  "\\caption{\\label{tab:corr}Correlations}",
-  lat_tab,
-  "\\end{table}"
-)
-cat(paste(latex_tab, collapse = "\n"))
-```
+\begin{center}
+  Figure 2 \\
+  \animategraphics[loop,controls,width=0.8\textwidth,height=0.5\textwidth,scale=1.3,buttonsize=0.05\textwidth]{0.5}{../media/fig}{11}{17} \\
+  Source: Gassen (2021), based on Dye (1985) and Jung and Kwon (1988)
+\end{center}
+  
+  Figure 2 show the unraveling model where some firms don't have information (green dots). The idea is very similar, but the result won't be the same. Starting with 10 uniformly distributed nondisclosing firms, market prices them based on the expectation of y $P = E[y] = (1+2+…+10)/10 = 5.5$. Again, firms underpriced at $P = 5.5$ will update their disclosure decisions and disclose information. The firms that disclosed will have their prices adjusted upwards and correctly, since every disclosure is trustworthy. The market will again adjust the firms that didn't disclose according to the expectation of y. However, the market only observes red and blue - any nondisclosure act is taken as red, since the market cannot observe the reason. Hence, all of the red and green will be adjusted by the expectation of y, that is, $P = E[y] = (1+2+3+4+10)/5 = 4$. Firms undervalued at the new price of 4 will disclose, market will again correct their prices, etc. This mechanism will continue until all the firms that had incentice/possibility to disclose, did so.  
 
 
-``` {r RegTable, results="asis"}
-tab <- tab_regression$table
-tab[12] <- paste(
-  "\\\\[-1.8ex] & \\multicolumn{4}{c}{", smp_def$label[9], "} \\\\"
-)
-esc_var_names <- str_replace_all(smp_def$var_name, fixed ("_"), "\\_")
-reg_names <- tibble(
-  var_name = esc_var_names[c(10, 8)],
-  label = smp_def$label[c(10, 8)]
-)
-for (i in c(15, 18)) {
-  pos <- (i-12)/3
-  tab[i] <- str_replace(
-    tab[i], fixed(reg_names$var_name[pos]), reg_names$label[pos]
-  )
-}
-latex_tab <- c(
-  "\\begin{table}[!htbp]",  
-  "\\caption{\\label{tab:reg}Regressions}",
-  "\\centering",
-  "\\begin{tabular}{lcccc}",
-  tab[8:33],
-  "\\end{tabular}",
-  "\\end{table}"
-)
-cat(paste(latex_tab, collapse = "\n"))
-```
+# Real Life Example
 
-# Motivation
+One of the most innovative companies of the current scenario is a perfect example for the uncertain information endowment - Tesla.
 
-How does income per capita affects life expectancy?
+\begin{center}
+  \includegraphics[width=0.5\textwidth]{../media/tesla.png}
+\end{center} 
 
-# Data by income level
+  Figure 3 shows a short timeline of Tesla and its main events. This is to put some of the following comments into context.
+  
+\begin{center}
+  Figure 3 \\
+  \includegraphics[width=1.1\textwidth]{../media/tesla1.png} \\
+  Tesla timeline. Source: Prepared by the author based on Tesla and Forbes
+\end{center} 
 
-```{r MyContrib, results="asis"}
+Model 3 was one of the biggest bets they had. It ended up being the best selling plug-in car of all times. Here are some events concerning the model:
+
+- $(2006)$ First mention of Model 3 as an affordable for all car
+- $(2007)$ Model 3 was codenamed Tesla "BlueStar" in the original business plan of 2007
+- $(Jul 2014)$ Model 3 announced on Musk’s Twitter account
+- $(Mar 2016)$ Costumers able to reserve a Model 3
+- $(Jul 2017)$ Delays in deliveries – extension until 2018
+- $(Nov 2020)$ Refreshed with cosmetic and internal changes
+- $(Dec 2020)$ Global sales since inception totaled about 814,000 units – best selling plug-in electric car ever
+
+Its sucessor, Model Y, also caused a lot of repercursion and has been around for quite some time already. 
+
+- $(2013)$ Trademark filed 
+- $(2015)$ Possible design as a Model 3-based Model Y with falcon-wing doors
+- $(Jun 2017)$ Model Y's silhouette presented at the annual general meeting 
+- $(Jun 2018)$ New silhouette revealed by CEO Musk
+- $(Mar 2019)$ Debut of Model Y at Tesla's design studio in Hawthorne, CA
+- $(Nov 2019)$ Announcement that Model Y would be assembled in Berlin’s Gigafactory
+- $(Jan 2020)$ Announcement that delivery of Model Y should begin in Q1 2020
+- $(Mar 2020)$ First deliveries 
+- $(Aug 2020)$ Design and manufacturing still improving – world’s largest unibody casting machine, switching to casting the rear body in a single piece
+- $(Jan 2021)$ Improvement of optional 7-seat, third-row seating configuration
 
 
-kable(
-  tab_expand, digits = c(0, 3, 3, 3, 3, 3, 3, 3), format = "latex",
-  caption = "\\label{tab:descriptives}Life Expectancy by Income Group",
-  format.args = list(decimal.mark = ".", big.mark = ",", 
-                     scientific=FALSE),
-  booktabs = TRUE, escape = FALSE, linesep = ""
-) -> kab_latex
+Based on the models we just saw, we should expect that those early annoucements would bring the stock price up. However, let's take a closer look.
 
-lat_tab <- unlist(strsplit(kab_latex, "\n"))
-lat_tab[6] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
-lat_tab[8] <- "\\hline\\\\[-1.8ex]"
-lat_tab[length(lat_tab) - 2] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
+\newpage
 
-latex_tab <- c(
-  "\\begin{table}[!htbp]",
-  "\\centering",
-  lat_tab[3],
-  "\\begin{adjustbox}{width=\\textwidth}",
-  "\\begin{threeparttable}",
-  lat_tab[5:(length(lat_tab) - 1)],
-  "\\begin{tablenotes}[flushleft]",
-  "\\setlength{\\labelsep}{0pt}",
-  "\\footnotetext",
-  sprintf(
-    "\\item Note: The data is obtained from the World Bank. It presents the average life expectancy by World Bank Income group.", length(unique(smp$country)),
-    min(as.numeric(as.character(smp$year))), 
-    max(as.numeric(as.character(smp$year)))
-  ),
-  "\\end{tablenotes}",
-  "\\end{threeparttable}",
-  "\\end{adjustbox}",
-  "\\end{table}"
-)
-cat(paste(latex_tab, collapse = "\n"))  
-```
+\begin{center}
+  Figure 4 \\
+  \includegraphics[width=1.1\textwidth]{../media/tesla_model_3.png} \\
+  Timeline Model 3 vs. Stock price. \\
+  Source: Prepared by the author based on Forbes and Tesla (as of 05/14/2021)
+\end{center}
+      
+Figure 4 shows us the stock price evolution and the main events concerning Model 3 are pointed in the timeline. Why all of those announcements didn't affect the stock price? Were future demand ever announced? They are selling Model 3 since 2016. 
 
-# Life expectancy over time
-```{r MyContrib2, echo = FALSE, fig.align="center", fig.cap="\\label{fig:scatter}Life expectancy in years - average for all countries"}
-fig_scatter_avg
-```
+\newpage
 
-```{r MyContrib3, echo = FALSE, fig.align="center", fig.cap="\\label{fig:scatter}Life expectancy in years - average by income level"}
-fig_scatter_level
-```
+\begin{center}
+  Figure 5 \\
+  \includegraphics[width=1.1\textwidth]{../media/tesla_model_y.png} \\
+  Timeline Model Y vs. Stock price. \\
+  Source: Prepared by the author based on Forbes and Tesla (as of 05/14/2021)
+\end{center}
 
-By comparing both figures, we can see that the average life expectancy changes drastically by the World Bank Income Group over the years.
+Figure 5 show us the same but for Model Y. The same concerns are raised. If it is such a great thing and great sales potential, why hasn't the stock price gone up? With all those announcements and media attention, why hasn’t Tesla’s stock price gone up before 2020?
+
+Well, innovation is...new! It is hard to forecast the impact of innovation. Just as it is hard to predict future demand of something that was newly created. Firms themselves can’t know the impact and financial forecast when developing new technologies. How do you put a price on something that was never done before? This information is unknown by the manager…and also by everyone else!
+In this case, the new technology is proving itself profitable after several years when mass production is starting.
+
+\newpage
+
+\begin{center}
+  Figure 6 \\
+  \includegraphics[width=1\textwidth]{../media/tesla_future_demand.png} \\
+  Source: Forbes
+\end{center}
+
+We already have some evidence that now that the innovation is around for a while, then it can be priced and its impacts forecasted. In this case, unraveling will occur normally. Signaling increased future demand by raising price will leade to a stock price adjustment - market will price Tesla accordingly upwards.
+
+This is a clear example where a innovative business model/product, will lead to a lack of information. Simply beacuse it's new, and everything that is new, is usually unknown.
+
+Another example to make this explicit, yet extreme, would be SpaceX.Ready for a SpaceX IPO? Company denied any intent to do so, but let’s assume it would. Morgan Stanley’s Adam Jonas VERY PRECISE valuation on SpaceX is…
+
+“For this report, we built a hypothetical DCF range for SpaceX, valuing the company somewhere between ~$5 bn and $120 bn+, with a Base Case of ~$50 bn.”
+
+\begin{center}
+  Figure 7 \\
+  \includegraphics[width=0.8\textwidth]{../media/spacex2.png} \\
+  SpaceX valuation. \\
+  Source: Financial Times
+\end{center}
+
+Part of this valuation depends on whether SpaceX actually does reinvent itself into a satellite-internet company, as Morgan Stanley predicts. (The $5bn figure is their ballparkvaluation if it doesn’t.). Mars missions don’t appear to factor into their model.
+
+What if it was? What is the value of landing on Mars? Do think anyone has this information?
+
 
 \pagebreak
 

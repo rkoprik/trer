@@ -1,19 +1,17 @@
-## The TRR 266 Template for Reproducible Empirical Research 
+This repository was built based on the ['trer' template for reproducible emprical research](https://github.com/trr266/trer).
 
-This repository provides an infrastructure for open science oriented empirical projects. It is based on the [TREAT repository](https://github.com/trr266/treat) but uses World Bank data instead of WRDS data so that it can be used by everybody interested in reproducible empirical research. Currently, this is all R based but it is not meant to stay that way. You can help by contributing Python and/or Stata code that mimics the R analysis steps via pull requests.
+## Build On Theory
+
+This repository provides lecture material for a Bachelor course level about Unraveling Theory. It contains a beamer pdf that can be used in the class and a handout pdf that students can use to read before/after class. Aside from the theoretical part, it contains real life examples (Tesla and SpaceX).
 
 
 ### Where do I start?
 
-For those of you new to R, we have "produced" a [series of short videos](https://www.youtube.com/playlist?list=PL-9XqvJlFJ-5NDUXubrbvF3aEQPeoAki3) that guide you through the process of setting up your computing environment and using the original TREAT repository. Also, there is a [blog post](https://joachim-gassen.github.io/2021/03/get-a-treat/) that details these steps in a written form. The steps of using this repository are esentially identical so this information does still apply.
+- `code`: This directory is empty as no code was used for this output.
 
-If you are new to scientific computing, we suggest that you also pick up a reference from the list below and browse through it. The [Gentzkow and Shapiro (2014) paper](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf) is a particularly easy and also useful read. 
+- `data`: This directory is empty as no data was used for this output.
 
-Then browse around the repository and familiarize yourself with its folders. You will quickly see that there are three folders that have files in them:
-
-- `code`: This directory holds program scripts that are being called to download World Bank data, prepare the data, run the analysis and create the output files (a paper and a presentation, both PDF files).
-
-- `data`: A directory where data is stored. You will see that it again contains sub-directories and a README file that explains their purpose.
+- `media`: This directory contains all the figures used in the examples mentioned.
 
 - `doc`: Here you will find two RMarkdown files containing text and program instructions that will become our paper and presentation, by rendering them through the R markdown process and LaTeX.
 
@@ -57,21 +55,6 @@ tinytex::install_tinytex()
 
 # That's all!
 ```
-
-### OK. That was fun. Bot how should I use the repo now?
-
-The basic idea is to clone the repository whenever you start a new project. If you are using GitHub, the simplest way to do this is to click on "Use this Template" above the file list. Then delete everything that you don't like and/or need. Over time, as you develop your own preferences, you can fork this repository and adjust it so that it becomes your very own template targeted to your very own preferences.
-
-
-### Why do you do abc in a certain way? I like to do things differently!
-
-Scientific workflows are a matter of preference and taste. What we present here is based on our experiences on what works well but this by no means implies that there are no other and better ways to do things. So, feel free to disagree and to build your own template. Or, even better: Convince us about your approach by submitting a pull request!
-
-
-### But there are other templates. Why yet another one?
-
-Of course there are and they a great. The reason why we decided to whip up our own is we wanted to have a template that is somewhat centered on workflows that are typical in the econ domain. Here you go.
-
 
 ### Licensing
 
